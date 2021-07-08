@@ -3,47 +3,57 @@
 <head>
     <title>Reservia</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <header id="header">
-        <h1 class="logo"></h1>
+    <header class="header">
+        <img class="headerImg" src="./Projet 2 - Reservia/images/logo/Reservia.svg" alt="Reservia">
+        <nav class="navigation">
+            <ul>
+                <li><a class="hosting" href="#hosting" title="ancrehebergements">Hébergements</a></li>
+                <li><a class="activity" href="#activity" title="ancreactivités">Activités</a></li>
+                <li id="signup"><a href="#" title="inscription">S'inscrire</a></li>
+            </ul>
 
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="search">
         <div class="enteterecherche">
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
 
         <div class="boutonrecherche">
-                <form action="" class="recherche">
-                    <input class="champrecherche" type="text" value="Marseille, France"/>
-                    <input class="bouton" type="button" value="Rechercher" />
+                <form class="recherche">
+                    <span class="iconemaps">
+                        <i class="iconemapsobjet"></i>
+                    </span>
+                    <input class="champrecherche" type="search" placeholder="Marseille, France"/>
+                    <button>
+                        <i class="cerclerecherche"></i>
+                        <span class="boutonrechercher">Rechercher</span>
+                    </button> 
                       
                 </form>
         </div>
 
         <div class="filtres">
-            <p>Filtres</p>
-            <input class="economique" type="button" value="Economique" />
-            <input class="familial" type="button" value="Familial" />
-            <input class="romantique" type="button" value="Romantique" />
-            <input class="animaux" type="button" value="Animaux autorisés" />
+            <h2>Filtres</h2>
+            <div><i class="economique" ></i>Economique</div>
+            <div><i class="familial" ></i>Familial</div>
+            <div><i class="romantique" ></i>Romantique</div>
+            <div><i class="animaux" ></i>Animaux autorisés</div>
         </div>
 
         <div class="infosville">
             <p class="petite">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-    </header>
-
-    <nav id="navigation">
-        <ul>
-            <li><a href="" title="ancrehebergements">Hébergements</a></li>
-            <li><a href="" title="ancreactivités">Activités</a></li>
-            <li><a href="" title="inscription">S'inscrire</a></li>
-        </ul>
-    </nav>
-
+        </div>
     <section id="section1">
         <div class="hébergements">
             <h3>Hébergements à Marseille</h3>
@@ -56,7 +66,7 @@
     <section id="section2">
         <h3>Activités à Marseille</h3>
     </section>
-
+</div>
     <footer>
         <div>
             <h4>A propos</h4>
