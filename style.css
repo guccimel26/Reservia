@@ -24,11 +24,12 @@ ul {
     display: grid;
     max-width: 1440px;
     margin: auto;
+    padding: 0 4rem;
 }
 
 
 .header nav {
-        grid-area: navbar;
+    grid-area: navbar;
  }
 
 .header ul {
@@ -89,7 +90,6 @@ ul {
 .search form {
     display: inline-flex;
     max-width: 100%;
-    overflow: auto;
 }
 
 .searchFormWrapIcon {
